@@ -1,0 +1,117 @@
+body {
+    background-image: url(images/background.jpg);
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    grid-template-areas: "nav nav nav"
+        "main img ."
+        "footer footer footer";
+}
+
+body nav {
+    background-color: rgb(22, 21, 21);
+    color: rgb(255, 255, 255);
+    font-family: 'Praise', cursive;
+    padding: 1em;
+    padding-top: 0.5em;
+    height: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 0px;
+    border-top: 0em;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+header {
+    display: none;
+}
+
+nav a {
+    color: inherit;
+}
+
+main {
+    grid-area: main;
+    padding-right: 0.1em;
+}
+
+main h1 {
+    color: #fff;
+    background: linear-gradient(to bottom right, rgb(235, 216, 158) 30%, rgb(195, 150, 65) 60%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 3em;
+    padding: 50px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    display: block;
+
+}
+
+main p {
+    color: #fff;
+    width: 250px;
+    font-size: large;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+img {
+    border-radius: 40%;
+    margin-top: 5em;
+    margin-left: 5em;
+    height: 17em;
+    width: 17em;
+    grid-area: img;
+
+
+}
+
+nav>ul>li {
+    position: relative;
+}
+
+nav ul ul {
+    position: absolute;
+    display: none;
+    background-color: rgb(22, 22, 21);
+    padding: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-area: "nav nav nav";
+    text-align: center;
+}
+
+nav>ul>li:hover ul {
+    display: block;
+}
+
+nav>ul>li>ul>li:hover a {
+    background-color: rgba(212, 17, 17, 0.712);
+    display: block;
+}
+
+footer {
+    grid-area: footer;
+    font-size: xx-large;
+}
+
+footer a {
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    margin-top: 5em;
+    text-decoration: none;
+    font-size: 2em;
+}
