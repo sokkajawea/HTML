@@ -4,7 +4,7 @@ body {
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: auto;
     grid-template-areas: "nav nav nav"
-        "main img ."
+        "main main main"
         "footer footer footer";
 }
 
@@ -32,44 +32,6 @@ header {
 
 nav a {
     color: inherit;
-}
-
-.index main {
-    grid-area: main;
-    padding-right: 0.1em;
-}
-
-.index h1 {
-    color: #fff;
-    background: linear-gradient(to bottom right, rgb(235, 216, 158) 30%, rgb(195, 150, 65) 60%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-size: 3em;
-    padding: 50px;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
-    display: block;
-
-}
-
-.index p {
-    color: #fff;
-    width: 250px;
-    font-size: large;
-    margin-left: 50px;
-    margin-right: 50px;
-    font-family: 'Supermercado One', cursive;
-}
-
-img {
-    border-radius: 40%;
-    margin-top: 5em;
-    margin-left: 5em;
-    height: 17em;
-    width: 17em;
-    grid-area: img;
-    
-    
 }
 
 nav>ul>li {
@@ -121,15 +83,22 @@ footer p {
     margin-left: 71em;
     font-family: 'Amatic SC', cursive;
 }
-.portfolio img{
+
+body main h1 {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Amatic SC', cursive;
+}
+
+main {
+    grid-area: main;
+}
+
+main img {
     border-radius: 0;
     width: 17em;
     height: 9rem;
-}
-.portfolio h1{
-    color: white;
-    text-decoration: underline;
-    font-family: 'Amatic SC', cursive;
-    text-align: center;
-    margin-left: 9em;
+    margin-top: 5em;
+    margin-left: 3em;
 }
