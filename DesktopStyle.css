@@ -1,4 +1,4 @@
-body {
+.home {
     background-image: url(images/background.jpg);
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -34,54 +34,19 @@ nav a {
     color: inherit;
 }
 
-.index main {
-    grid-area: main;
-    padding-right: 0.1em;
-}
-
-.index h1 {
-    color: #fff;
-    background: linear-gradient(to bottom right, rgb(235, 216, 158) 30%, rgb(195, 150, 65) 60%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-size: 3em;
-    padding: 50px;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
-    display: block;
-
-}
-
-.index p {
-    color: #fff;
-    width: 250px;
-    font-size: large;
-    margin-left: 50px;
-    margin-right: 50px;
-    font-family: 'Supermercado One', cursive;
-}
-
-img {
-    border-radius: 40%;
-    margin-top: 5em;
-    margin-left: 5em;
-    height: 17em;
-    width: 17em;
-    grid-area: img;
-    
-    
-}
-
 nav>ul>li {
     position: relative;
 }
 
 nav ul ul {
     position: absolute;
-    display: none;
+    display: block;
     background-color: rgb(22, 22, 21);
     padding: 0;
     width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    pointer-events: none;
 }
 
 nav ul {
@@ -94,32 +59,77 @@ nav ul {
 
 nav>ul>li:hover ul {
     display: block;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 nav>ul>li>ul>li:hover a {
     background-color: rgba(212, 17, 17, 0.712);
     display: block;
 }
+.home .index {
+    grid-area: main;
+    padding-right: 0.1em;
+}
+
+.home .index h1 {
+    color: #fff;
+    background: linear-gradient(to bottom right, rgb(235, 216, 158) 30%, rgb(195, 150, 65) 60%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 3em;
+    padding: 50px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    display: block;
+
+}
+
+.home .index p {
+    color: #fff;
+    width: 250px;
+    font-size: large;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'Supermercado One', cursive;
+}
+
+.home img {
+    border-radius: 40%;
+    margin-top: 5em;
+    margin-left: 5em;
+    height: 17em;
+    width: 17em;
+    grid-area: img;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    
+}
+
 
 footer {
     grid-area: footer;
     font-size: x-large;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
 }
 
 footer a {
     color: white;
     text-decoration: none;
     font-size: 2em;
-    padding-left: 0.5em;
-    float: right;
 }
 
 footer p {
-    margin-top: 7em;
     color: white;
     text-decoration: underline;
-    margin-left: 71em;
     font-family: 'Amatic SC', cursive;
+    text-align: center;
 }
 .portfolio img{
     border-radius: 0;

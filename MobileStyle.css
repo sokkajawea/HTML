@@ -1,11 +1,12 @@
-body {
+.home {
     background-image: url(images/background.jpg);
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas: "nav"
         "main"
-        "img";
+        "img"
+        "footer";
 }
 .shownav:before :hover{
     cursor: pointer;
@@ -102,4 +103,24 @@ img {
     height: 15em;
     width: 15em;
     grid-area: img;
+}
+footer {
+    grid-area: footer;
+    font-size: x-large;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    padding-left: 0.5em;
+    float: right;
+}
+
+footer p {
+    margin-top: 7em;
+    color: white;
+    text-decoration: underline;
+    margin-left: 71em;
+    font-family: 'Amatic SC', cursive;
 }
