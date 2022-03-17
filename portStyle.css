@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-image: url(images/background.jpg);
     display: grid;
@@ -24,6 +29,7 @@ body nav {
     justify-content: space-around;
     flex-wrap: nowrap;
     flex-direction: column;
+    margin: 0.5em;
 }
 
 header {
@@ -55,6 +61,7 @@ nav ul {
     grid-template-columns: 33% 33% 33%;
     grid-area: "nav nav nav";
     text-align: center;
+    padding-left: 2.5em;
 }
 
 nav>ul>li:hover ul {
@@ -75,7 +82,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 40vh;
+    
 }
 
 footer a {
@@ -89,6 +96,7 @@ footer p {
     text-decoration: underline;
     font-family: 'Amatic SC', cursive;
     text-align: center;
+    margin-bottom: 0.5em;
 }
 
 body main h1 {
@@ -100,6 +108,23 @@ body main h1 {
 
 main {
     grid-area: main;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    grid-template-areas: "head head head"
+        "para para para"
+        "img1 img2 img3"
+        "img4 . .";
+    place-items: center;
+}
+.portfolio p{
+    grid-area: para;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive;
+    margin-top: 2em;
+    font-size: larger;
 }
 
 main img {
@@ -109,6 +134,220 @@ main img {
     margin-top: 5em;
     margin-left: 3em;
 }
-main h1{
+
+main h1 {
     color: gainsboro;
+    grid-area: head;
+}
+
+.image {
+    position: relative;
+    width: 272px;
+    grid-area: img1
+}
+
+.proj1 {
+    display: block;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 144px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    margin-left: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.overlay>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.overlay:hover>* {
+    transform: translateY(0);
+}
+
+.desc {
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.image2 {
+    position: relative;
+    width: 272px;
+    grid-area: img2;
+}
+
+.proj2 {
+    display: block;
+    width: 100%;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 144px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    margin-left: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.overlay2:hover {
+    opacity: 1;
+}
+
+.overlay2>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.overlay2:hover>* {
+    transform: translateY(0);
+}
+
+.descDisney {
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.image3 {
+    position: relative;
+    width: 272px;
+    grid-area: img3;
+}
+
+.proj3 {
+    display: block;
+    width: 100%;
+}
+
+.overlay3 {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 144px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    margin-left: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.overlay3:hover {
+    opacity: 1;
+}
+
+.overlay3>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.overlay3:hover>* {
+    transform: translateY(0);
+}
+
+.descUbisoft {
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    position: absolute;
+    width: 101vw;
+    height: 11em;
+    top: 34em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2b4162;
+    background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+}
+
+.buttons {
+    text-align: center;
+}
+
+.image4 {
+    position: relative;
+    width: 272px;
+    grid-area: img4;
+}
+
+.proj4 {
+    display: block;
+    width: 100%;
+}
+
+.overlay4 {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 144px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    margin-left: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.overlay4:hover {
+    opacity: 1;
+}
+
+.overlay4>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.overlay4:hover>* {
+    transform: translateY(0);
+}
+
+.descAnimals {
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
 }

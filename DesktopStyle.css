@@ -97,7 +97,7 @@ nav>ul>li>ul>li:hover a {
 .home img {
     border-radius: 40%;
     margin-top: 5em;
-    margin-left: 5em;
+    margin-left: 10em;
     height: 17em;
     width: 17em;
     grid-area: img;
@@ -142,4 +142,19 @@ footer p {
     font-family: 'Amatic SC', cursive;
     text-align: center;
     margin-left: 9em;
+}
+.footer {
+    position: absolute;
+    width: 101vw;
+    height: 11em;
+    top: 34em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2b4162;
+background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+}
+
+.buttons {
+    text-align: center;
 }
