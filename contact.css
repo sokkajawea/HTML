@@ -164,6 +164,7 @@ input[type="text"], select, textarea {
     font-weight: bold;
     height: 2em;
     font-size: 15px;
+    cursor: pointer;
 }
 .req{
     display: inline;
