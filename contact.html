@@ -43,11 +43,12 @@
     </nav>
 <main>
     <h1>Get in touch with me!</h1>
-    <section class="form">
-        <form action="mailto:danielwahba02@gmail.com?subject=Contact Form" target="blank" method="get">
-            <label for="fName">First Name<section class="req">*</section>:</label><input type="text" name="fName" required/>
-            <label for="lName">Surname<section class="req">*</section>:</label><input type="text" name="lName" required/>
-            <label for="lName">Email<section class="req">*</section>:</label><input type="text" name="email" required/>
+    <article class="form">
+        <form action="mailto:danielwahba02@gmail.com" target="blank" method="get">
+            <input type="hidden" name="subject" value="Contact-Me" id="subject">
+            <label for="fName">First Name<article class="req">*</article>:</label><input type="text" name="fName" required/>
+            <label for="lName">Surname<article class="req">*</article>:</label><input type="text" name="lName" required/>
+            <label for="lName">Email<article class="req">*</article>:</label><input type="text" name="email" required/>
             <label for="choice">Where have you heard of me?</label><select name="choice" id="choice">
                 <option value="1">Referenced</option>
                 <option value="2">Appplication Submitted</option>
@@ -56,22 +57,22 @@
                 <option value="5">Other</option>
             </select>
             <label for="maybe">If you have selected Other, please specify</label><input type="text" name="other" id="other">
-            <label for="query">Message:</label><textarea name="query" id="query" cols="30" rows="10" placeholder="Please enter your message..."></textarea>
+            <label for="query">Message:</label><textarea name="body" id="query" cols="30" rows="10" placeholder="Please enter your message..."></textarea>
             <input type="submit" value="Submit" name="submit" class="submit">
         </form>
-    </section>
+    </article>
     <p>* This is a required field. Please fill this in with a valid input</p>
 </main>
 <footer>
-    <section class="footer">
+    <article class="footer">
         <p>My socials!</p>
-        <section class="buttons">
+        <article class="buttons">
             <a href="https://www.instagram.com/dan_the_ban_ana/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
             <a href="https://twitter.com/devils_anus" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
             <a href="https://github.com/sokkajawea" target="_blank"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.linkedin.com/in/daniel-wahba-906b68234/" target="blank"><i class="fa-brands fa-linkedin"></i></a>
-        </section>
-    </section>
+        </article>
+    </article>
 </footer>
 </body>
 </html>

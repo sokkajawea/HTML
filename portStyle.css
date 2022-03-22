@@ -104,17 +104,18 @@ body main h1 {
     text-align: center;
     text-decoration: underline;
     font-family: 'Amatic SC', cursive;
+    grid-column: 3;
 }
 
 main {
     grid-area: main;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 20% 20% 20% 20%;
     grid-template-rows: auto;
-    grid-template-areas: "head head head"
-        "para para para"
-        "img1 img2 img3"
-        "img4 img5 img6";
+    grid-template-areas: "head head head head"
+        "para para para para"
+        "img1 img2 img3 img4"
+        "img5 img6 img7 img8";
     place-items: center;
 }
 .portfolio p{
@@ -125,6 +126,7 @@ main {
     font-family: 'Amatic SC', cursive;
     margin-top: 2em;
     font-size: larger;
+    grid-column: 7/1;
 }
 
 main img {
@@ -399,7 +401,7 @@ main h1 {
     text-decoration: none;
     color: white;
 }
-.overlay, .overlay2, .overlay3, .overlay4, .overlay5, .overlay6{
+.overlay, .overlay2, .overlay3, .overlay4, .overlay5, .overlay6, .overlay7, .overlay8{
     border-radius: 10%;
 }
 .image6 {
@@ -445,6 +447,102 @@ main h1 {
 }
 
 .descTesla {
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.image7 {
+    position: relative;
+    width: 272px;
+    grid-area: img7;
+}
+
+.proj7 {
+    display: block;
+    width: 100%;
+}
+
+.overlay7 {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 144px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    margin-left: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.overlay7:hover {
+    opacity: 1;
+}
+
+.overlay7>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.overlay7:hover>* {
+    transform: translateY(0);
+}
+
+.descUoN {
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.image8 {
+    position: relative;
+    width: 272px;
+    grid-area: img8;
+}
+
+.proj8{
+    display: block;
+    width: 100%;
+}
+
+.overlay8 {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 144px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    margin-left: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.overlay8:hover {
+    opacity: 1;
+}
+
+.overlay8>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.overlay8:hover>* {
+    transform: translateY(0);
+}
+
+.descBpool {
     font-size: 1em;
     font-weight: bold;
     text-decoration: none;
