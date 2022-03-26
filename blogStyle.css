@@ -111,6 +111,22 @@ footer p {
     margin-bottom: 0.5em;
 }
 
+.footer {
+    position: absolute;
+    width: 101vw;
+    height: 8em;
+    top: 50em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2b4162;
+    background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+}
+
+.buttons {
+    text-align: center;
+}
+
 main h1 {
     color: white;
     text-decoration: underline;
@@ -141,9 +157,13 @@ main p{
     color: white;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
 .blogRow{
     margin-top: 0em;
+    margin-bottom: 1em;
     color: black;
     background-color: #fff;
     border-radius: 4px;
@@ -153,4 +173,8 @@ main p{
     position: relative;
     transition: all .25s;
     width: 65em;
+}
+.blogRow:hover{
+   transform: translateY(-0.5em);
+
 }
