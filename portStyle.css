@@ -59,7 +59,6 @@ nav ul {
     list-style-type: none;
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-area: "nav nav nav";
     text-align: center;
     padding-left: 2.5em;
 }

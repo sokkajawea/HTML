@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/background.jpg);
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    grid-template-areas: "nav nav nav"
+        "main main main"
+        "footer footer footer";
+}
+
+main {
+    grid-area: main;
+}
+
+body nav {
+    background-color: rgb(22, 21, 21);
+    color: rgb(255, 255, 255);
+    font-family: 'Praise', cursive;
+    padding: 1em;
+    padding-top: 0.5em;
+    height: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    border-top: 0em;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: 0.5em;
+}
+
+header {
+    display: none;
+}
+
+nav a {
+    color: inherit;
+}
+
+nav>ul>li {
+    position: relative;
+}
+
+nav ul ul {
+    position: absolute;
+    display: block;
+    background-color: rgb(22, 22, 21);
+    padding: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    pointer-events: none;
+}
+
+nav ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+    padding-left: 2.5em;
+}
+
+nav>ul>li:hover ul {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+nav>ul>li>ul>li:hover a {
+    background-color: rgba(212, 17, 17, 0.712);
+    display: block;
+}
+
+footer {
+    grid-area: footer;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    margin-left: 0.2em;
+}
+
+footer p {
+    color: white;
+    text-decoration: underline;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.footer {
+    position: absolute;
+    width: 101vw;
+    height: 11em;
+    top: 350em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2b4162;
+    background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+    animation: slide-in 1000ms;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.buttons {
+    text-align: center;
+}
+
+main h1 {
+    color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline solid red;
+}
+
+main p {
+    color: whitesmoke;
+    margin-left: 2em;
+    margin-right: 2em;
+    font-size: 1.5em;
+}
+
+.image1 img{
+    width: 45em;
+    height: 24em;
+    margin-left: 3em;
+    margin-top: 0.5em;
+}
+
+.image1{
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+.text1{
+    position: absolute;
+    bottom: 21px;
+    left: 11.9em;
+    background-color: rgb(80, 73, 73);
+    background-clip: 2em;
+}
+.indexExp,.portExp {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+.index2{
+    margin-bottom: 0.5em;
+}
+.link {
+    color: #008080;
+    text-decoration: underline;
+}
+.indexHtmlVal,.indexCssVal, .portHTML, .portCSS, .contHTML, .contCSS, .blogHTML, .blogCSS{
+    width: 68em;
+    height: 35em;
+    margin-left: 3em;
+    margin-top: 2em;
+}
+.image2,.image3, .refPort, .portVal, .portVal2, .contVal, .contVal2, .image4, .blogVal, .blogVal2{
+    position: relative;
+}
+.image3{
+    margin-bottom: 5em;
+}
+.indexVal1,.indexVal2, .portRefText, .portValText, .portValText2, .contValText, .contValText2, .refText, .blogValText, .blogValText2{
+    position: absolute;
+    background-color: rgb(80, 73, 73);
+    background-clip: 2em;
+    bottom: 10px;
+    left: 23.45em;
+}
+.contVal{
+    float: right;
+    margin-right: 3em;
+}
+.contValText{
+    left: 32.1em;
+    margin: 0;
+    padding: 0;
+}
+.contValText2{
+    left: 31.1em;
+}
+.portVal2{
+    float: right;
+    margin-right: 2em;
+}
+.portValText{
+    left: 22.2em;
+}
+.portValText2{
+    left: 25.15em;
+    padding: 0;
+    margin: 0;
+}
+.portRefText{
+    left: 8em;
+    bottom: 8em;
+}
+.indexVal2{
+    left: 26.4em;
+    bottom: 9px;
+}
+.blogValText{
+    left: 29.4em;
+}
+.blogValText2{
+    left: 32.35em;
+    margin: 0;
+}
+.blogVal2{
+    float: right;
+}
+.asideText{
+    width: 22em;
+    float: right;
+    margin-top: 6em;
+}
+.asideText2{
+    float: right;
+    width: 22em;
+    margin-top: 6.5em;
+}
+.refPort img{
+    margin-left: 3em;
+    margin-top: 1em;
+}
+.asideText3{
+    float: right;
+    width: 40em;
+    margin-top: 11em;
+}
+.val{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.8em;
+}
+.cPage{
+    margin-top: 20em;
+}
+.contactExp, .contactExp2{
+    margin-top: 0.5em;
+}
+.bPage{
+    margin-top: 1.5em;
+}
+.blogExp{
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.image4 img{
+    width: 60em;
+    height: 35em;
+    margin-left: 3em;
+    margin-top: 0.5em;
+}
+.refText{
+    left: 24em;
+}
+.asideBlog{
+    float: right;
+    width: 27.96em;
+    margin-top: 7em
+}
+.mobileVersion{
+    margin-top: 20em;
+}

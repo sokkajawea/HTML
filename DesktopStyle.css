@@ -21,13 +21,13 @@ body nav {
     height: 1em;
     font-weight: bold;
     text-decoration: none;
-    margin-top: 0px;
     border-top: 0em;
     grid-area: nav;
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
     flex-direction: column;
+    margin: 0.5em;
 }
 
 header {
@@ -57,8 +57,8 @@ nav ul {
     list-style-type: none;
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-area: "nav nav nav";
     text-align: center;
+    padding-left: 2.5em;
 }
 
 nav>ul>li:hover ul {
@@ -79,7 +79,7 @@ nav>ul>li>ul>li:hover a {
 .home .index h1 {
     color: #fff;
     background: linear-gradient(to bottom right, rgb(235, 216, 158) 30%, rgb(195, 150, 65) 60%);
-    -webkit-text-fill-color: transparent;
+   -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-size: 3em;
     padding: 50px;

@@ -43,12 +43,12 @@
     </nav>
 <main>
     <h1>Get in touch with me!</h1>
-    <article class="form">
+    <section class="form">
         <form action="mailto:danielwahba02@gmail.com" target="blank" method="get">
             <input type="hidden" name="subject" value="Contact-Me" id="subject">
-            <label for="fName">First Name<article class="req">*</article>:</label><input type="text" name="fName" required/>
-            <label for="lName">Surname<article class="req">*</article>:</label><input type="text" name="lName" required/>
-            <label for="lName">Email<article class="req">*</article>:</label><input type="text" name="email" required/>
+            <label for="fName">First Name<span class="req">*</span>:</label><input id="fName" type="text" name="fName" required/>
+            <label for="lName">Surname<span class="req">*</span>:</label><input id="lName" type="text" name="lName" required/>
+            <label for="email">Email<span class="req">*</span>:</label><input id="email" type="text" name="email" required/>
             <label for="choice">Where have you heard of me?</label><select name="choice" id="choice">
                 <option value="1">Referenced</option>
                 <option value="2">Application Submitted</option>
@@ -56,23 +56,23 @@
                 <option value="4">Instagram Ad</option>
                 <option value="5">Other</option>
             </select>
-            <label for="maybe">If you have selected Other, please specify</label><input type="text" name="other" id="other">
-            <label for="query">Message:</label><textarea name="body" id="body" cols="30" rows="10" placeholder="Please enter your message..."></textarea>
+            <label for="maybe">If you have selected Other, please specify</label><input type="text" name="other" id="maybe">
+            <label for="query">Message:</label><textarea name="body" id="query" cols="30" rows="10" placeholder="Please enter your message..."></textarea>
             <input type="submit" value="Submit" name="submit" class="submit">
         </form>
-    </article>
+    </section>
     <p>* This is a required field. Please fill this in with a valid input</p>
 </main>
 <footer>
-    <article class="footer">
+    <section class="footer">
         <p>My socials!</p>
-        <article class="buttons">
+        <section class="buttons">
             <a href="https://www.instagram.com/dan_the_ban_ana/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
             <a href="https://twitter.com/devils_anus" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
             <a href="https://github.com/sokkajawea" target="_blank"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.linkedin.com/in/daniel-wahba-906b68234/" target="blank"><i class="fa-brands fa-linkedin"></i></a>
-        </article>
-    </article>
+        </section>
+    </section>
 </footer>
 </body>
 </html>
