@@ -1,4 +1,4 @@
-.home {
+.home{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
@@ -94,6 +94,7 @@ nav {
 }
 #clicked:target nav {
     display: block;
+    
 }
 nav a {
     color: inherit;
@@ -108,7 +109,7 @@ nav a {
     display: flex;
 
 }
-footer {
+.home footer, .portBody footer, .contactBody footer, .blogBody footer, .siterepBody footer {
     grid-area: footer;
     font-size: x-large;
     display: flex;
@@ -118,20 +119,20 @@ footer {
     height: 40vh;
 }
 
-footer a {
+.home footer a, .portBody footer a, .contactBody footer a, .blogBody footer a, .siterepBody footer a {
     color: white;
     text-decoration: none;
     font-size: 2em;
     margin-left: 0.2em;
 }
 
-footer p {
+.home footer p, .portBody footer p, .contactBody footer p, .blogBody footer p, .siterepBody footer p{
     color: white;
     text-decoration: underline;
     font-family: 'Amatic SC', cursive;
     text-align: center;
 }
-.footer {
+.home .footer, .portBody .footer, .contactBody .footer, .blogBody .footer, .siterepBody .footer {
     position: absolute;
     width: 100vw;
     height: 10em;
@@ -153,4 +154,321 @@ footer p {
 }
 .buttons {
     text-align: center;
+}
+.portBody .footer{
+    top: 85em;
+}
+.contactBody .footer{
+    top: 39em;
+}
+.siterepBody .footer{
+    top: 395em;
+}
+.portfolio p{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive;
+    margin-top: 2em;
+    font-size: larger;
+}
+.portfolio img{
+    border-radius: 10%;
+    width: 17em;
+    height: 9rem;
+    margin-top: 3em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.portfolio h1{
+    color: gainsboro;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Amatic SC', cursive;
+}
+.portfolio a{
+    text-decoration: none;
+    color: #007F7B;
+    font-size: 1.5em;
+    font-family: 'Anybody', cursive;
+}
+.portfolio section section{
+    text-align: center;
+}
+form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 40em;
+    height: 25em;
+    text-align: center;
+    align-items: center;
+    grid-gap: 0.5em;
+    margin-left: 1em;
+    margin-top: 6em;
+    background-color: rgba(34, 33, 33, 0.904);
+    font-family: 'Shadows Into Light', cursive;
+    padding-left: 1em;
+    grid-area: form;
+    place-content: center;
+}
+
+.submit {
+    grid-column: 1/3;
+}
+
+form label {
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+input[type="text"], select, textarea {
+    margin-top: 0.5em;
+    margin-right: 2em;
+}
+.submit {
+    margin-top: 0.5em;
+    margin-right: 1.6em;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+    background-color: green;
+    border: black;
+    font-weight: bold;
+    height: 2em;
+    font-size: 15px;
+    cursor: pointer;
+}
+.req{
+    display: inline;
+    color: red;
+}
+.contactMain p{
+    color: white;
+    margin-top: 12.5em;
+    grid-area: para;
+    font-family: 'Shadows Into Light', cursive;
+}
+select{
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+}
+.contactMain h1 {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Amatic SC', cursive;
+    grid-area: head;
+}
+.blogMain h1 {
+    color: white;
+    text-decoration: underline;
+    font-size: 2em;
+    margin-left: 3em;
+    margin-bottom: 1em;
+    grid-area: head;
+}
+.blogMain h6{
+    text-decoration: solid black underline;
+    grid-area: date;
+    font-size: 12px;
+    opacity: 0.67;
+}
+.blogMain h2{
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.blogMain p{
+    grid-area: content;
+    font-size: 20px;
+}
+
+.blog-list {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.blogRow{
+    margin-top: 0em;
+    margin-bottom: 1em;
+    color: black;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 3px 10px rgb(25 17 34 / 5%);
+    display: block;
+    padding: 13px 25px 15px;
+    position: relative;
+    transition: all .25s;
+    width: 80%;
+    margin-bottom: 2em;
+}
+.blogBody .footer{
+    top: 102em;
+}
+.blogMain{
+    position: relative;
+    z-index: -1;
+}
+
+.siterepMain h1{
+    color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline solid red;
+}
+.siterepMain p{
+    color: whitesmoke;
+    margin-left: 2em;
+    margin-right: 2em;
+    font-size: 1.5em;
+}
+.image1 img{
+    width: 45em;
+    height: 24em;
+    margin-left: 3em;
+    margin-top: 0.5em;
+}
+
+.image1{
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+.text1{
+    position: absolute;
+    bottom: 21px;
+    left: 11.9em;
+    background-color: rgb(80, 73, 73);
+}
+.indexExp,.portExp {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+.index2{
+    margin-bottom: 0.5em;
+}
+.siterepMain .link {
+    color: #008080;
+    text-decoration: underline;
+}
+
+.indexHtmlVal,.indexCssVal, .portHTML, .portCSS, .contHTML, .contCSS, .blogHTML, .blogCSS, .mobCSS{
+    width: 68em;
+    height: 35em;
+    margin-left: 3em;
+    margin-top: 2em;
+}
+.image2,.image3, .refPort, .portVal, .portVal2, .contVal, .contVal2, .image4, .blogVal, .blogVal2, .mobVal{
+    position: relative;
+}
+.image3{
+    margin-bottom: 5em;
+}
+.indexVal1,.indexVal2, .portRefText, .portValText, .portValText2, .contValText, .contValText2, .refText, .blogValText, .blogValText2, .mobValText{
+    position: absolute;
+    background-color: rgb(80, 73, 73);
+    bottom: 10px;
+    left: 23.45em;
+}
+
+.contValText{
+    left: 18.1em;
+    margin: 0;
+    padding: 0;
+}
+.contValText2{
+    left: 19.1em;
+}
+.portVal2{
+    margin-right: 0.25em;
+}
+.portValText{
+    left: 22.2em;
+}
+.portValText2{
+    left: 25.15em;
+    padding: 0;
+    margin: 0;
+}
+.portRefText{
+    left: 10.2em;
+    bottom: 7.5em;
+}
+.indexVal2{
+    left: 26.4em;
+    bottom: 9px;
+}
+.blogValText{
+    left: 17.4em;
+}
+.blogValText2{
+    left: 18.35em;
+    margin: 0;
+}
+.asideText{
+    position: absolute;
+    margin-top: 18em;
+}
+.asideText2{
+    margin-top: 9.5em;
+}
+.refPort img{
+    margin-left: 3em;
+    margin-top: 1em;
+    width: 45em;
+}
+.val{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.8em;
+}
+.cPage{
+    margin-top: 2em;
+}
+.contactExp, .contactExp2{
+    margin-top: 0.5em;
+}
+.bPage{
+    margin-top: 1.5em;
+}
+.blogExp{
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.image4 img{
+    width: 49em;
+    height: 27em;
+    margin-left: 3em;
+    margin-top: 0.5em;
+}
+.refText{
+    left: 16.6em;
+}
+.asideBlog{
+    margin-top: 3em;
+}
+.mobileVersion{
+    margin-top: 2em;
+}
+.mobExp{
+    margin-top: 1em;
+}
+.siterepMain{
+    position: relative;
+    z-index: -1;
+}
+.indexHtmlVal,.indexCssVal, .portHTML, .portCSS, .contHTML, .contCSS, .blogHTML, .blogCSS, .mobCSS{
+    width: 50em;
+    height: 24em;
+}
+.mobValText{
+    position: absolute;
+    background-color: rgb(80, 73, 73);
+    left: 16.5em;
+    bottom: 0.1em;
 }

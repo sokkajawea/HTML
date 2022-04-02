@@ -13,10 +13,6 @@ body {
         "footer footer footer";
 }
 
-main {
-    grid-area: main;
-}
-
 body nav {
     background-color: rgb(22, 21, 21);
     color: rgb(255, 255, 255);
@@ -26,6 +22,7 @@ body nav {
     height: 1em;
     font-weight: bold;
     text-decoration: none;
+    margin-top: 0px;
     border-top: 0em;
     grid-area: nav;
     display: flex;
@@ -33,6 +30,9 @@ body nav {
     flex-wrap: nowrap;
     flex-direction: column;
     margin: 0.5em;
+}
+main{
+    grid-area: main;
 }
 
 header {
@@ -106,7 +106,7 @@ footer p {
     position: absolute;
     width: 101vw;
     height: 11em;
-    top: 350em;
+    top: 450em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -173,19 +173,19 @@ main p {
     color: #008080;
     text-decoration: underline;
 }
-.indexHtmlVal,.indexCssVal, .portHTML, .portCSS, .contHTML, .contCSS, .blogHTML, .blogCSS{
+.indexHtmlVal,.indexCssVal, .portHTML, .portCSS, .contHTML, .contCSS, .blogHTML, .blogCSS, .mobCSS{
     width: 68em;
     height: 35em;
     margin-left: 3em;
     margin-top: 2em;
 }
-.image2,.image3, .refPort, .portVal, .portVal2, .contVal, .contVal2, .image4, .blogVal, .blogVal2{
+.image2,.image3, .refPort, .portVal, .portVal2, .contVal, .contVal2, .image4, .blogVal, .blogVal2, .mobVal{
     position: relative;
 }
 .image3{
     margin-bottom: 5em;
 }
-.indexVal1,.indexVal2, .portRefText, .portValText, .portValText2, .contValText, .contValText2, .refText, .blogValText, .blogValText2{
+.indexVal1,.indexVal2, .portRefText, .portValText, .portValText2, .contValText, .contValText2, .refText, .blogValText, .blogValText2, .mobValText{
     position: absolute;
     background-color: rgb(80, 73, 73);
     background-clip: 2em;
@@ -252,6 +252,9 @@ main p {
     float: right;
     width: 40em;
     margin-top: 11em;
+}
+.mobValText{
+    left: 28.58em;
 }
 .val{
     display: flex;
