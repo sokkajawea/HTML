@@ -159,7 +159,7 @@ nav a {
     top: 85em;
 }
 .contactBody .footer{
-    top: 39em;
+    top: 32.2em;
 }
 .siterepBody .footer{
     top: 395em;
@@ -173,6 +173,15 @@ nav a {
     font-size: larger;
 }
 .portfolio img{
+    border-radius: 10%;
+    width: 17em;
+    height: 9rem;
+    margin-top: 3em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.portfolio .proj4{
     border-radius: 10%;
     width: 17em;
     height: 9rem;
@@ -200,7 +209,7 @@ nav a {
 form {
     display: grid;
     grid-template-columns: 50% 50%;
-    width: 40em;
+    width: 78vw;
     height: 25em;
     text-align: center;
     align-items: center;
@@ -245,7 +254,6 @@ input[type="text"], select, textarea {
 }
 .contactMain p{
     color: white;
-    margin-top: 12.5em;
     grid-area: para;
     font-family: 'Shadows Into Light', cursive;
 }

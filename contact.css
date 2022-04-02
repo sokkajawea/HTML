@@ -21,6 +21,7 @@ grid-area: main;
         "head head head"
         "form form form"
         "para para para"; 
+    justify-items: center;
 }
 body nav {
     background-color: rgb(22, 21, 21);
@@ -136,18 +137,20 @@ footer p {
 form {
     display: grid;
     grid-template-columns: 50% 50%;
-    width: 40em;
+    width: 50vw;
     height: 25em;
     text-align: center;
-    align-items: center;
     grid-gap: 0.5em;
-    margin-left: 35em;
     margin-top: 6em;
     background-color: rgba(34, 33, 33, 0.904);
     font-family: 'Shadows Into Light', cursive;
     padding-left: 1em;
-    grid-area: form;
     place-content: center;
+    align-items: center;
+}
+.form{
+    grid-area: form;
+    grid-column: 2;
 }
 
 .submit {
@@ -184,6 +187,7 @@ main p{
     margin-top: 12.5em;
     grid-area: para;
     font-family: 'Shadows Into Light', cursive;
+    grid-column: 1;
 }
 select{
     text-align: center;
