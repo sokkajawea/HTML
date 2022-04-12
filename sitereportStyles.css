@@ -11,6 +11,7 @@ body {
     grid-template-areas: "nav nav nav"
         "main main main"
         "footer footer footer";
+        overflow-x: hidden;
 }
 
 body nav {
