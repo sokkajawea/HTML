@@ -200,3 +200,6 @@ body main h1 {
     font-family: 'Amatic SC', cursive;
     grid-area: head;
 }
+.star{
+    color: red;
+}
