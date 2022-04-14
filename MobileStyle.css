@@ -162,7 +162,7 @@ nav a {
     top: 32.2em;
 }
 .siterepBody .footer{
-    top: 405em;
+    top: 430em;
 }
 .portfolio p{
     color: white;
@@ -316,7 +316,7 @@ select{
     margin-bottom: 2em;
 }
 .blogBody .footer{
-    top: 102em;
+    top: 114em;
 }
 .blogMain{
     position: relative;
@@ -479,4 +479,7 @@ select{
     background-color: rgb(80, 73, 73);
     left: 16.5em;
     bottom: 0.1em;
+}
+.star{
+    color: red;
 }
